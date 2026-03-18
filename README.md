@@ -26,3 +26,16 @@
 
 ## Completion Status
 - Partial: checkout and basic webhook parsing exist, but webhook handlers are TODO-only and there is no storage or subscription state management.
+
+## Program Summary
+- Next.js 14 app that renders a Japanese pricing page with three plans and triggers Stripe Checkout subscription sessions via `/api/checkout`.
+- Includes success/cancel pages and a Stripe webhook endpoint that validates events and logs them, but business logic is stubbed.
+
+## How to Use
+- Not verified
+- Install dependencies: `npm install`
+- Set env vars: `STRIPE_SECRET_KEY`, `STRIPE_WEBHOOK_SECRET`, and optionally `NEXT_PUBLIC_BASE_URL`
+- Run locally: `npm run dev`
+
+## Completion Status
+- Partial: core pricing UI and Stripe Checkout flow work, but webhook handlers only log events and there is no persistence or subscription state management.
